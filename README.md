@@ -97,9 +97,19 @@ Backend type : ArangoDb
 |test_query                   |      1000|    0.70|    1000|       3|    1077|
 |test_insert                   |   100000|    5.50|    1000|     151|    1077|
 |test_query                   |    100000|    0.80|    1000|     151|    1077|
-</code>
 	
 ```
 
-
-
+Usage
+-------
+```
+diagnosql@b0:~$ ./test.py -h
+./test.py usage
+	-s stop and start each backend before and after each test
+	-v make me verbose
+	-c /path/to/config/file default config file at /etc/diagnosql.conf
+	-h Get this usage resume
+	--test=test_name run this test only, one section of config file
+	--list-backends get a list of sort of backends supproted and exit inmediatly
+	--list-tests get a list of tests and exit inmediatly
+```
